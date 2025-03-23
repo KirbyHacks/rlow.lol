@@ -3,22 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RLOW.LOL</title>
+  <meta name="description" content="Digital presence of a ghost with no chains. Full stack developer, privacy advocate, and data expert lurking in the shadows.">
+  <meta name="keywords" content="developer, privacy, security, data, hacking, web development">
+  <meta name="author" content="I@RLOW.LOL">
+  <meta property="og:title" content="RLOW.LOL - A Ghost With No Chains">
+  <meta property="og:description" content="Digital presence of a ghost with no chains. Full stack developer, privacy advocate, and data expert lurking in the shadows.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rlow.lol">
+  <meta name="theme-color" content="#000000">
 
-  <!-- Favicon -->
+  <title></title>
+
   <link rel="icon" href="/assets/images/skulltalk.gif" type="image/gif">
   <link rel="apple-touch-icon" href="/assets/images/skulltalk.gif">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-  <!-- Critical resources -->
   <link rel="preload" href="/assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/css/style.min.css" as="style">
   <link rel="stylesheet" href="/assets/css/style.min.css">
-  <script type="module" crossorigin src="/assets/index-BF2Modsp.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const titleText = "RLOW.LOL";
+      let titleIndex = 0;
+
+      function typeTitle() {
+        if (titleIndex < titleText.length) {
+          document.title = titleText.substring(0, titleIndex + 1);
+          titleIndex++;
+          setTimeout(typeTitle, 200);
+        }
+      }
+      typeTitle();
+    });
+  </script>
+  <script type="module" crossorigin src="/assets/index-BGZR1Tmm.js"></script>
 </head>
 <body>
   <div class="centered">
-    <h1>I LURK IN YOUR SHADOWS, A GHOST WITH NO CHAINS.</h1>
+    <h1 id="main-title" class="glow">I LURK IN YOUR SHADOWS, A GHOST WITH NO CHAINS.</h1>
     <div class="ascii-image"></div>
     <h2><a href="mailto:I@RLOW.LOL" class="email-link">I@RLOW.LOL</a></h2>
     <p id="carousel-text" class="carousel">FULL STACK DEVELOPER</p>
